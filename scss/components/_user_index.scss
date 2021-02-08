@@ -1,0 +1,114 @@
+.wrapper-quiz--user{
+  background-color: lightblue;
+  min-height: 100vh;
+}
+
+.current-time{
+  padding: 20px;
+  text-align: center;
+  width: 15%;
+  margin-left: auto;
+}
+
+.welcome__title{
+  position: absolute;
+  top: 165px;
+  left: 20px;
+  font-size: 2rem;
+}
+
+.quiz-container{
+  flex-basis: 100%;
+}
+
+.quizzes-title{
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 10px;
+  margin-top: 50px;
+}
+
+.view-list-quiz{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.quiz-user{
+  padding: 10px;
+  margin: 10px auto;
+  border: 2px solid black;
+  width: 70%;
+  &__author{
+    text-align: right;
+    font-style: italic;
+  }
+  &__title{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 7px;
+  }
+  &__description{
+    font-size: 1.5rem;
+    margin-bottom: 7px;
+  }
+  &__info{
+    font-size: 1.3rem;
+    text-align: right;
+  }
+
+  &__btn{
+    display: block;
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 10px auto 0;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    width: 50%;
+    padding: 10px;
+    border: 2px solid black;
+    transition: .2s;
+    &:hover{
+      background-color: white;
+      color: black;
+    }
+  }
+}
+
+@media (min-width:1100px){
+
+  .quizzes-title{
+    font-size: 2.9rem;
+    padding: 20px;
+  }
+
+  .welcome__title{
+    font-size: 2.5rem;
+  }
+  .current-time{
+    font-size: 1.4rem;
+  }
+  .quiz-user{
+    padding: 15px;
+    margin: 20px auto;
+    &__title{
+      font-size: 2.3rem;
+      margin-bottom: 10px;
+    }
+    &__description{
+      font-size: 1.7rem;
+      margin-bottom: 10px;
+    }
+    &__info{
+      font-size: 1.5rem;
+    }
+  
+    &__btn{
+      width: 30%;
+      font-size: 1.7rem;
+      margin: 20px auto 0;
+      padding: 15px;
+    }
+  }
+}
